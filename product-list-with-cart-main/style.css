@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", sans-serif;
+}
+#container{
+    width: 100%;
+    min-height: 100vh;
+    background-color:  hsl(13, 31%, 94%);
+}
+#container > main{
+    width: 90%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+#container > main > section{
+    flex: 1;
+}
+#container > main > aside{
+    width: 25%;
+}
+#container > main > section > article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#container > main > section > article > div{
+    width: 30%;
+    margin-bottom: 100px;
+}
+#container > main > section > article > div > img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+#container > main > section > article > div > nav > p{
+    color:hsl(7, 20%, 60%);
+    margin-bottom: 5px;
+}
+#container > main > section > article > div > nav > h4{
+    color: hsl(14, 65%, 9%);
+    margin-bottom: 5px;
+}
+#container > main > section > article > div > nav > li{
+    list-style-type: none;
+    color:  hsl(14, 86%, 42%);
+    font-weight: bold;
+}
+#container > main > section > article > div > nav > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid hsl(14, 65%, 9%);
+    background-color: white;
+    margin-top: -130px;
+    margin-left: 50px;
+    position: relative;
+}
+
+#container > main > section > article > div > nav > button img{
+    width: 20px;
+    margin-right: 4px;
+}
+#container > main > aside > div{
+    width: 100%;
+    background-color: white;
+    min-height: 10vh;
+    border-radius: 8px;
+}
+#container > main > aside > div > h1{
+    font-size: 25px;
+    color: hsl(14, 86%, 42%);
+    padding: 20px 20px 0px 20px;
+}
+#container > main > aside > div > section{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: hsl(14, 65%, 9%);
+    font-weight: 500;
+}
+#container > main > aside > div > summary{
+    padding-bottom: 20px;
+    display: none;
+    margin-top: 10px;
+}
+#container > main > aside > div > summary > div{
+    padding: 10px 20px;
+    border-bottom: 1px solid hsl(14, 25%, 72%);
+}
+#container > main > aside > div > summary > div h4{
+    margin-bottom: 5px;
+}
+#container > main > aside > div > summary > div > img{
+    float: right;
+    border: 1px solid hsl(7, 20%, 60%);
+    padding: 4px;
+    border-radius: 100px;
+}
+#container > main > aside > div > summary > div span{
+    color: hsl(14, 86%, 42%);
+    font-weight: 500;
+    margin-right: 8px;
+    font-size: 15px;
+}
+#container > main > aside > div > summary > div > label{
+    color: hsl(14, 25%, 72%);
+}
+#container > main > aside > div > summary > div > label + span{
+    color: hsl(7, 20%, 60%);
+    margin-left: 6px;
+    font-weight: bold;
+}
+#container > main > section > article > div > footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 160px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: hsl(14, 86%, 42%);
+    margin-left: 50px;
+    margin-top: -58px;
+    position: relative;
+    color: white;
+}
+
+#container > main > section > article > div > footer > img{
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+#fillCart > nav > aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#fillCart > nav > aside + div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 90%;
+    background-color: hsl(13, 31%, 94%);
+    margin: auto;
+    min-height: 50px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+#fillCart > nav > aside + div + button{
+    width: 90%;
+    display: block;
+    margin: 20px auto 5px auto;
+    min-height: 40px;
+    border-radius: 100px;
+    background-color: hsl(14, 86%, 42%);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#wrapper{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#wrapper > section{
+    width: 35%;
+    min-height: 40vh;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+#wrapper > section > h2{
+    color: hsl(14, 65%, 9%);
+}
+#wrapper > section > p{
+    font-size: 13px;
+    margin-top: 6px;
+    color: hsl(14, 25%, 72%);
+}
+#wrapper > section > article{
+    width: 100%;
+    min-height: 10vh;
+    background-color: hsl(13, 31%, 94%);
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#wrapper > section > article > nav{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(14, 25%, 72%);
+}
+#wrapper > section > article > nav > img{
+    width: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#wrapper > section > article > nav > div{
+    flex: 1;
+}
+#wrapper > section > article > nav > div h4{
+    color: hsl(14, 65%, 9%);
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+#wrapper > section > article > nav > div > p{
+    float: right;
+    color: hsl(14, 65%, 9%);
+}
+#wrapper > section > article > nav > div > span{
+    color: hsl(14, 86%, 42%);
+}
+#wrapper > section > article > nav > div > label{
+    color: hsl(14, 25%, 72%);
+    margin-left: 10px;
+}
+#wrapper > section > article > aside > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#wrapper > section > a > button{
+    width: 100%;
+    min-height: 50px;
+     border-radius: 100px;
+     background-color: hsl(14, 86%, 42%);
+     color: white;
+     border: none;
+     cursor: pointer;
+}
+@media screen and (max-width: 900px){
+    #container > main{
+        flex-direction: column;
+    }
+    #container > main > section > article{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    #container > main > section > article > div{
+        width: 95%;
+    }
+    #container > main > section > article > div > nav > button, 
+    #container > main > section > article > div > footer
+    {
+        margin-left: 200px;
+    }
+    #container >  main > aside{
+        width: 95%;
+    }
+    #wrapper{
+        width: 100%;
+    }
+    #wrapper > section {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+}
