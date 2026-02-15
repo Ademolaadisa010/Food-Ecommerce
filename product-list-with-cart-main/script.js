@@ -14,7 +14,7 @@ let counter = 0;
 let count = 1;
 let totalPrice = 0;
 async function Api(){
-    const response = await fetch("http://127.0.0.1:5500/product-list-with-cart-main/data.json");
+    const response = await fetch("data.json");
     const data = await response.json();
     console.log(data);
 
